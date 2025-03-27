@@ -1,6 +1,7 @@
 // src/components/Home.js
 import React from 'react';
 import '../styles/Home.css';
+import Grange from './Grange';
 
 const Home = () => {
   return (
@@ -13,8 +14,10 @@ const Home = () => {
         backgroundRepeat: 'no-repeat',
         minHeight: '100vh',
         position: 'relative',
+        overflow: 'hidden',
       }}
     >
+      {/* Navigation */}
       <header className="navigation">
         <div className="logo">
           <img src="/assets/logo.png" alt="Logo" />
@@ -31,12 +34,16 @@ const Home = () => {
         </nav>
       </header>
 
+      {/* Images décoratives */}
       <img className="image3-overlay" src="/assets/image3.jpg" alt="Image 3 décorative" />
       <img className="image2-overlay" src="/assets/image2.png" alt="Image 2 décorative" />
-      <img className="image1-overlay" src="/assets/image1.png" alt="Image 1 centrée" />
+
+      {/* Superposition du composant Grange */}
+      <div className="grange-overlay">
+        <Grange />
+      </div>
     </div>
   );
 };
 
 export default Home;
-

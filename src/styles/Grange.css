@@ -1,0 +1,93 @@
+/* src/styles/Grange.css */
+
+.grange-container {
+  position: relative;
+  width: 100%;
+  max-width: 1060px;
+  height: 80vh;
+  margin-top: 200px;
+  margin-left: 200px;
+  overflow: hidden;
+  background-color: black;
+  z-index: 9999;
+  border-radius: 20px;
+}
+
+/* Vidéo YouTube plein fond */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 12px; /* optionnel pour un look doux */
+  overflow: hidden;
+}
+
+.video-background iframe,
+.video-background video {
+  width: 100%;
+  height: 100%;
+}
+
+/* Portes */
+.porte {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 1000; /* ✅ Plus haut que tout le reste sauf contrôles */
+  transition: transform 1.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.porte img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.porte-gauche {
+  left: 0;
+}
+
+.porte-droite {
+  right: 0;
+}
+
+/* Animation d'ouverture */
+.porte-gauche.open {
+  transform: translateX(-100%);
+}
+
+.porte-droite.open {
+  transform: translateX(100%);
+}
+
+/* Contrôles de la vidéo */
+.video-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1001;
+  display: flex;
+  gap: 12px;
+}
+
+.video-controls button {
+  padding: 10px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.video-controls button:hover {
+  background-color: rgba(220, 220, 220, 0.95);
+}
