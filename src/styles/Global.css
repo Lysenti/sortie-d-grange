@@ -1,0 +1,21 @@
+/* src/styles/Global.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Conteneur principal */
+  .App {
+    max-width: 1440px; /* Limite la largeur */
+    margin: 0 auto;    /* Centre le conteneur */
+    padding: 0 20px;   /* Ajoute du padding sur les côtés */
+  }
+  
+  
+  
