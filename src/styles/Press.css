@@ -1,0 +1,90 @@
+/* src/styles/Press.css */
+
+.press-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .image2-overlay,
+  .image3-overlay {
+    position: absolute;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
+  .image2-overlay {
+    top: 100px;
+    left: 700px;
+    width: 300px;
+  }
+  
+  .image3-overlay {
+    bottom: 190px;
+    left: 15%;
+    width: 350px;
+    transform: scale(1.5);
+    transform-origin: top right;
+  }
+  
+  .press-image {
+    position: absolute;
+    z-index: 2;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.4s ease-in-out; /* Animation fluide */
+    cursor: pointer;
+  }
+  
+
+  .press-1 {
+    top: 100px;
+    right: 40px;
+    width: 350px;
+    transform: scale(1.4);
+    transform-origin: top right;
+    overflow-y: auto;
+    position: absolute;
+    cursor: pointer;
+  }
+  
+  .press-2 {
+    top: 25%;
+    left: 40%;
+    width: 350px;
+    transform: scale(1.5);
+    transform-origin: top right;
+  }
+  
+  .press-3 {
+    top: 100px;
+    left: 5%;
+    width: 350px;
+    height: 500px;
+    transform-origin: top left !important;
+    transform-origin: top right;
+  }
+  
+  /* ---- HOVER : GROSSISSEMENT AU SURVOL ---- */
+.press-image:hover {
+    transform: scale(2);
+    z-index: 3;
+  }
+
+
+  /* Hover spécifique pour presse_1 */
+.press-1:hover {
+    transform: scale(1.6) !important;
+  }
+ 
+  .gif-facing {
+    position: absolute;
+    bottom: 10px;
+    right: 30%;
+    width: 160px;
+    z-index: 1;
+    pointer-events: none;
+    transform: scale(1.8);
+    transform-origin: bottom right;
+  }
