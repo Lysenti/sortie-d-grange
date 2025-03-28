@@ -4,23 +4,25 @@ import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 const Header = () => {
-    return (
-      <header className="navigation">
-        <div className="logo">
+  return (
+    <header className="navigation">
+      <div className="logo">
+        <Link to="/">
           <img src="/assets/logo.png" alt="Logo" />
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#press">Presse</a></li>
-            <li><a href="#lyrics">Paroles</a></li>
-            <li><a href="#shop">Boutique</a></li>
-            <li><a href="#partners">Partenariats</a></li>
-            <li><a href="#contact">Contacts</a></li>
-          </ul>
-        </nav>
-      </header>
-    );
-  };
-  
-  export default Header;
+        </Link>
+      </div>
+      <nav>
+        <ul>
+          <li><Link to="/">Accueil</Link></li>
+          <li><Link to="/press">Presse</Link></li>
+          <li><Link to="/lyrics">Paroles</Link></li>
+          <li><Link to="/shop">Boutique</Link></li>
+          <li><Link to="/partners">Partenariats</Link></li>
+          <li><Link to="/contact">Contacts</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;
