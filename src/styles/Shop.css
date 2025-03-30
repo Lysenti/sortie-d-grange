@@ -1,0 +1,86 @@
+/* src/styles/Shop.css */
+
+.shop-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 90px 20px 20px 20px; /* Décalage vers le bas pour libérer la barre de nav */
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  
+  .shop-soundcloud {
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .shop-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end; /* Décalé vers la droite */
+    padding-right: 2%;
+  }
+  
+  .shop-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 600px; /* Réduction de la largeur */
+    width: 100%;
+  }
+  
+  .shop-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .shop-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .shop-description {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  .shop-status {
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .shop-status.available {
+    color: green;
+    background-color: #e0ffe0;
+  }
+  
+  .shop-status.unavailable {
+    color: red;
+    background-color: #ffe0e0;
+  }
+  
