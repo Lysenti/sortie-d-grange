@@ -1,0 +1,70 @@
+/* src/styles/Partners.css */
+
+.partners-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 60px 20px 20px 20px;
+    margin: 90px 20px 20px 20px; /* Décalage vers le bas pour libérer la barre de nav */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .partners-soundcloud {
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .partners-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: flex-end; /* Décalé vers la droite */
+    padding-right: 2%;
+  }
+  
+  .partners-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .partners-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #ccc;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  
+  .partners-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .partners-description {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
+  

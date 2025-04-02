@@ -1,0 +1,33 @@
+.contact-container {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #1b2735;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .status-message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
