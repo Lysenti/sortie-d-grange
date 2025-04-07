@@ -1,4 +1,13 @@
 /* src/styles/Global.css */
+
+@font-face {
+  font-family: 'Ravie';
+  src: url('../assets/fonts/ravie.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 * {
     box-sizing: border-box;
   }

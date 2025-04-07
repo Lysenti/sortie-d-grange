@@ -2,9 +2,9 @@
 
 .grange-container {
   position: relative;
-  width: 100%;
-  max-width: 1060px;
-  height: 80vh;
+  width: 100vw;
+  max-width: 952px;
+  height: 70vh;
   margin-top: 200px;
   margin-left: 200px;
   overflow: hidden;
@@ -47,7 +47,7 @@
 .porte img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: none;
 }
 
 .porte-gauche {
